@@ -5,19 +5,25 @@
 
 init python:
     import random
-
-default bachelor_choice = ["hiroshi","leo", "keiran", "soren", "mako"]
+    import gacha
+# default bachelor_choice = ["hiroshi","leo", "keiran", "soren", "mako"]
 
 label gacha:
 
 #    if not bachelor_choice:
 #        jump return
+    $ listLength = gacha.returnBachelorLength()
+    if listLength != 0:
+        $ pick = gacha.randomizeBachelor()
+    else:
+        $ print("All bachelors chosen.")
+        # jump prologue_C
 
-    $ pick = random.choice(bachelor_choice)
-    $ bachelor_choice.remove(pick)
+    # $ pick = randomizeBachelor()
 
-    if bachelor_choice == 0:
-        jump prologue_C
+    # if bachelor_choice == 0:
+    #     $ print("All bachelors chosen.")
+        # jump prologue_C
 
 #    if bachelor choice == 1:
 #        jump Day2Start
