@@ -176,7 +176,12 @@ label prologue_A:
     # di ko sure if dapat lalagyan yan ng label or smth, pero im open to suggestions!
     # Also, this part is supposed to have interactive image in the form of imagebuttons, don't worry about this for now kasi we don't have placeholders yet
 
-    $ name = renpy.input("Your name please?")
+    label inputName:
+        $ name = renpy.input("Your name please?", multiline=False)
+
+        if not name:
+            # If the player doesn't enter a name, show an error message and ask again if u like
+            jump inputName
 
     "Welcome, [name]!"
 

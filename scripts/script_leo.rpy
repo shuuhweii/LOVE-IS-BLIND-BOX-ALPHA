@@ -1,7 +1,11 @@
 
-define leo = Character("Leo")
+#   LEO'S ROUTE 
+
+#   DAY 0
 
 label leo_D0_A:
+
+    scene mcbedroom
 
     "The figurine box slowly levitates towards me and lands on my hands softly. Mystery Sponsor waits giddily at the thrill of my impending luck or misfortune."
 

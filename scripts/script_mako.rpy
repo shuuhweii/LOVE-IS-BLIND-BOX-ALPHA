@@ -202,6 +202,95 @@ label mako_D0_BA:
 
     sponsor "Why thank you, benefactor!"
 
+    jump mako_D0_C
+
+label mako_D0_BB:
+
+    "The fish tilted their head. They stared at me like I had asked a dumb question."
+
+    show sponsor_neutral
+
+    sponsor "Oh? What makes you think I would lie to you?"
+
+    show sponsor_happy
+
+    sponsor "'Cuz you know that would be...SILLY, right?"
+
+    sponsor "Me...LYING?! Pfft."
+
+    mc "You know that's what someone who lies would say."
+
+    show sponsor_wtf
+
+    sponsor "Well, you don't know that."
+
+    jump mako_D0_C
+
+
+label mako_D0_C:
+
+    show sponsor_hyped
+
+    sponsor "Ah, would you look at the time! It seems I have...appointments. I have appointments!"
+
+    sponsor "You understand, don't you? Even a...being like me has business across time!"
+
+    mc "...you are still not making any sense."
+
+    sponsor "Not important! My number is ALWAYS open for you, my benefactor. Never forget that!"
+
+    "The Mystery Sponsor bows as a result. I can't tell if it's a genuine gesture or if they're mocking me."
+
+    "The Mystery Sponsor did a dramatic spin akin to a ballet spin, and ended it with a low bow."
+
+    show sponsor_happy
+
+    sponsor "Toodles! As the younglings like to say."
+
+    hide sponsor_happy
+
+    "With a single blink of my eye, the Mystery Sponsor disappeared in my room, living no evidence of their existence."
+
+    "Dumbfounded, I sat alone in my bedroom, with the figurine still heavy on my hand."
+
+    "Today is certainly...something."
+
+    "It's a good thing I have no one to talk to in my life."
+
+    "No one would have believed me that a sentient fish in a suit was in my apartment a second ago."
+
+    "Only, that conversation gave me a slight headache."
+
+    "I guess trying to make sense of what has happened has taken a bit of a toll on me."
+
+    "Still, I don't get why Mystery Sponsor would be nervous like that. This one doesn't seem so bad...right?"
+
+    "I walked to my collection of my figurines. I decided to settle him next to my favorite Idol Popstar figurine {i}Mikune Hatsu.{/i}"
+
+    "It's really cute how they're the same size."
+
+    "No doubt this Mako has a rather...interesting eye color. And his smirk...rather ominous when I look closer."
+
+    "Hmm..."
+
+    "Maybe Mystery Sponsor has a reason to be nervous?"
+
+    "Nah, that sounds stupid."
+
+    "Stretching my arms, I decided to ignore that thought for this day. I think I should finish that level in the game I am playing right now."
+
+    "Not like I have anything important to do anyways"
+
+    "And that's what I did."
+
+    "Probably. I do vaguely remember standing up from time to time but...the day ended rather quickly by then."
+
+    "Maybe tomorrow would be interesting to say the least."
+
+return
+
+
+
 
 
 
