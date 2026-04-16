@@ -1,6 +1,6 @@
 import random
 
-bachelor_choice = ["hiroshi","leo", "keiran", "soren", "mako"]
+bachelor_choice = ["hiroshi","leo", "keiran", "soren", "mako", "sixto", "lucas"]
 
 def randomizeBachelor():
     pick = random.choice(bachelor_choice)
