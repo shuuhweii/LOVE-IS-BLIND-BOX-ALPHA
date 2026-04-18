@@ -130,6 +130,12 @@ label prologue_C:
     label keiran:
         jump keiran_D0_A
 
+    label sixto:
+        jump sixto_D0_A
+
+    label lucas:
+        jump lucas_D0_A
+
 
 
 # $ bachelor_choice = renpy.random.choice(['sixto', 'hiroshi', 'leo', 'keiran', 'mako', 'soren', 'lucas'])
