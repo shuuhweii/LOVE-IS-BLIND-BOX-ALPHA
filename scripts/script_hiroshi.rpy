@@ -202,7 +202,7 @@ label hiro_D0_C:
 
     "I curl up in my bed quietly, the strange feeling still stirring in the pit of my stomach as I allow sleep to take over..."
 
-    
+return
 
 
 
