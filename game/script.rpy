@@ -390,7 +390,9 @@ label choice_heart:
 
     "{i}Click.{/i}"
 
-    jump gacha
+    jump temporary
+
+    #    jump gacha
 
 label choice_down:
 
@@ -404,7 +406,9 @@ label choice_down:
 
     "So this is the illusion of free choice... Huh..."
 
-    jump gacha
+    jump temporary
+
+    #   jump gacha
 
 label choice_xbutton:
 
