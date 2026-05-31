@@ -407,6 +407,95 @@ label hiro_D3_A:
 
     "Without warning, I hear his footsteps coming towards me."
     "I get whirled around and get shoved to the nearest wall." # You're into this guy?
+    "His hand pins my wrists above my head and his other hand prods my chest with his finger harshly."
     
+    # show hiro frustrated
+    # CG maybe eyes emoji?
+
+    hiro "I've had just about enough of you."
+    hiro "You're a weak, spineless, shrivelling little brat that has NO control over anything in her life."
+    hiro "NOBODY is here for you except for me."
+    hiro "Maybe if you had just a sliver of self restraint and dignity, we wouldn't be here right now dealing with all this."
+
+    "His face comes closer, and I freeze."
+    "I can feel his hot breath on my cheek, his eyes filled with fury I didn't know he could have."
+    "I could hear his heartbeat get faster and faster."
+
+    hiro "I LOATHE every second I'm looking around the obscenity of this house."
+    hiro "I absolutely LOATHE that of all the chances in all the world, I get chosen to be stuck with you and your filth."
+    hiro "And just so you know?"
+    hiro "I LOATHE every second I have to spend with you, you pathetic, whiny little shit."
+
+    # play around with wait timers
+
+    "..."
+
+    "..."
+
+    "..."
+
+    "He's heaving on me at this point, and I could see his face flushed in anger."
+    "I feel my throat constrict, and my eyes get teary."
+
+    menu:
+        "Push him off.":
+            pass
+        "Push him off.":
+            pass
+        "Push him off.":
+            pass
+
+    "Shakily, I attempt to gather myself to pull my wrists down to escape from him."
+    "When I successfully do, I shove him with all my strength, caushing his stature to step back."
+
+    # show hiro in pain or whatever depending on what sprites y'all have
+
+    mc "FUCK YOU!"
+
+    # hide hiro
+
+    "I hide my face in my hands and run to the bedroom, completely overwhelmed by what just happened."
+
+    "I spend the rest of the afternoon sobbing harshly into my pillow until my lungs feel like collapsing."
+
+    "..."
+
+    "..."
+
+    "..."
+
+    hiro "... [name]?"
+
+    "I can hear his incessant knocking on my door."
+    "Impudent man."
+
+    hiro "Please, can you open the door? Please?"
+
+    "..."
+
+    hiro "Let me apologize where I can see you... please..." # You're into this guy?
+
+    "..."
+
+    "..."
+
+    "..."
+
+    "The knocking continues for over an hour."
+    "Then two hours."
+    "Then three,"
+    "then four."
+
+    "I see the sun set from outside, and the knocking doesn't stop."
+    "His knuckles should be raw from doing that at this point."
+
+    hiro "I'm not going to stop, you know. Not until you let me in..." # You're into THIS guy?
+    
+    "..."
+
+    hiro "Please, [name]..."
+
+    "The raps became softer and softer, and I could feel him tire from the constant motion."
+    "I let it be the last thing I hear until I fall asleep exhausted."
 
     return
