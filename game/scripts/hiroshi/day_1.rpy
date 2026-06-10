@@ -1,12 +1,11 @@
 # HIROSHI DAY 1
-# The "???" stranger character is for characters with the "???" name in the script.
-define stranger = Character("???")  
 
 label hiro_D1_A:
 
     "I'm awoken by the sound of shuffling feet outside of my bedroom. 
-    In a panicked daze, I stand up and grab one of the bats on my floor. 
-    I groan in disdain when I see it's my limited edition baby blue Nationally Acclaimed Team SGT signed bat with a minor defect and misprint of the team's name, 
+    In a panicked daze, I stand up and grab one of the bats on my floor."
+    
+    "I groan in disdain when I see it's my limited edition baby blue Nationally Acclaimed Team SGT signed bat with a minor defect and misprint of the team's name, 
     but I grip it tighter anyway when I hear the sound coming closer."
 
     "As I tread closer to the door, 
@@ -32,7 +31,7 @@ label hiro_D1_AA:
     I step back a bit when he does, feeling immediately bad. 
     He covers his face with his hands shakily."
 
-    stranger "S-sorry! I'm sorry, I swear I didn't mean to wake or disturb you or anything! 
+    "???" "S-sorry! I'm sorry, I swear I didn't mean to wake or disturb you or anything! 
     I just… need to get out of here! Please, let me out of here!"
 
     "At least he seems remorseful. 
@@ -50,7 +49,7 @@ label hiro_D1_AA:
 label hiro_D1_AB:
     "The man shakes his head in desperation, his gaze fixed to the floor."
 
-    stranger "I really don't know. Look, can I just- can I please get out?"
+    "???" "I really don't know. Look, can I just- can I please get out?"
 
     "He's fidgeting with his collar. 
     I can see the way he doesn't meet my eyes, and I get impatient."
@@ -59,7 +58,7 @@ label hiro_D1_AB:
 
     "He sighs exasperatedly."
 
-    stranger "I don't know how I got in, okay? But this place is just so messy, I can't stand it…"
+    "???" "I don't know how I got in, okay? But this place is just so messy, I can't stand it…"
 
     "He proceeds to turn and stomps to my balcony. The nerve of this guy!"
 
@@ -71,7 +70,7 @@ label hiro_D1_AC:
     "The bat just slightly misses the side of his arm. 
     He dodges, and gets clearly upset, covering his face."
 
-    stranger "What the hell are you doing?!"
+    "???" "What the hell are you doing?!"
 
     "My mouth is agape when he makes that comment."
 
@@ -100,11 +99,11 @@ label hiro_D1_B:
 
     "He turns around and sees me, and his eyes dart across the room we're in."
 
-    stranger "Shit… oh shit…"
+    "???" "Shit… oh shit…"
 
     "He gags and shakily falls to his knees. Oh, the drama on this guy!"
 
-    stranger "P-please! Turn me back!"
+    "???" "P-please! Turn me back!"
 
     "He grasped my hands together, begging me desperately to do whatever 
     had happened to him earlier 
@@ -115,17 +114,17 @@ label hiro_D1_B:
     "He shakes my hands more insistently. 
     I can basically feel it get more and more sweaty as he begs."
 
-    stranger "Please! I can't-"
+    "???" "Please! I can't-"
 
     "He gags again. I let out an offended scoff and shove his hands away. What the fuck is his problem?"
 
     mc "Look! I-I don't know what to do, alright? I don't know what you want me to do!"
 
-    stranger "Turn me back!"
+    "???" "Turn me back!"
 
     "I get even more confused. He stands and backs away, and tries to bow again."
 
-    stranger "L-look, I… I really can't stand looking at the mess inside. It's making me feel so… terribly awful and I just-"
+    "???" "L-look, I… I really can't stand looking at the mess inside. It's making me feel so… terribly awful and I just-"
 
     "He gags again."
 
@@ -137,7 +136,7 @@ label hiro_D1_B:
 
     "What a prick!"
 
-    stranger "Look… your guess is as good as mine. Sorry… I… I really can't give you a proper answer but..."
+    "???" "Look… your guess is as good as mine. Sorry… I… I really can't give you a proper answer but..."
 
     "I try to wrap my head around this strange man. He looks kind of familiar."
 
@@ -145,7 +144,7 @@ label hiro_D1_B:
 
     "He inhales sharply, clearing his throat."
 
-    stranger "What?"
+    "???" "What?"
 
     menu:
         "Choose"
@@ -159,21 +158,21 @@ label hiro_D1_B:
 label hiro_D1_BA:
     "The question seemed to make him stop fidgeting and he sighs quietly."
 
-    stranger "I believe s-so…"
+    "???" "I believe s-so…"
 
     jump hiro_D1_C
 
 label hiro_D1_BB:
     "I see his shoulders slump in defeat when he hears me mention the creature."
 
-    stranger "That th-thing…"
+    "???" "That th-thing…"
 
     jump hiro_D1_C
 
 label hiro_D1_BC:
     "He swallows harshly."
 
-    stranger "I-um… remember being… trapped in a box…"
+    "???" "I-um… remember being… trapped in a box…"
 
     jump hiro_D1_C
 
@@ -190,11 +189,11 @@ label hiro_D1_C:
 
     "He keeps his eyes closed as he answers."
 
-    stranger "The two are completely… unrelated. I'm n-not nervous… I just really, really can't handle- um… extreme messes especially like this. And the creature is… something else entirely…"
+    "???" "The two are completely… unrelated. I'm n-not nervous… I just really, really can't handle- um… extreme messes especially like this. And the creature is… something else entirely…"
 
     "He slowly goes down to the floor and covers his face."
 
-    stranger "Look, I-I'm sorry I don't really know… I can't really focus right now. How did you even get this house so… God I can smell it from here…"
+    "???" "Look, I-I'm sorry I don't really know… I can't really focus right now. How did you even get this house so… God I can smell it from here…"
 
     "He's now kneeled straight down to the floor with his face buried in his hands. 
     I summon every urge not to yell at this pathetic, shaking man for making me feel levels of 
@@ -216,7 +215,7 @@ label hiro_D1_CA:
 
     "The man huffs and groans quietly, rubbing his face in frustration."
 
-    stranger "Alright… okay… I know but… Ugh, no…"
+    "???" "Alright… okay… I know but… Ugh, no…"
 
     "He actually stands and finally meets my eyes properly for the first time. 
     My eyes widen when I get a good glimpse of his face."
@@ -236,7 +235,7 @@ label hiro_D1_CB:
     jump hiro_D1_D
 
 label hiro_D1_CC:
-    stranger "Me? Over dramatic? Have you seen the state of your own fucking house???"
+    "???" "Me? Over dramatic? Have you seen the state of your own fucking house???"
 
     "Wow."
 
@@ -250,7 +249,7 @@ label hiro_D1_D:
     "When he finally gets a good look at me, I see his eyes flash in recognition. 
     He steps back to give some space between us and coughs to clear his throat."
 
-    stranger "You look young."
+    "???" "You look young."
 
     menu:
         "Choose"
@@ -284,7 +283,7 @@ label hiro_D1_E:
     
     "…and he turns his back on me, shoulders raised."
 
-    stranger "I'm sorry. I-I really can't talk to you in this state…"
+    "???" "I'm sorry. I-I really can't talk to you in this state…"
 
     "At this point I'm absolutely fed up by his attitude."
     
