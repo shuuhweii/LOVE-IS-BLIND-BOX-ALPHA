@@ -57,6 +57,15 @@ label hiro_D3_A:
 
     # alladat choice shit
 
+    menu:
+    "He's waiting for me to respond."
+    "Have you eaten? Do you wanna eat with me?":
+        call eating_breakfast
+    "I'd rather clean...":
+        call rather_clean
+    "This is all really nice, but I'm not hungry.":
+        call not_hungry
+
     # ending that choice shit
 
     "After everything, Hiroshi speaks up."
@@ -497,5 +506,714 @@ label hiro_D3_A:
 
     "The raps became softer and softer, and I could feel him tire from the constant motion."
     "I let it be the last thing I hear until I fall asleep exhausted."
+
+    return
+
+label eating_breakfast:
+    "I see him physically tense up, and the undeniable red that spreads across his face tells me he hasn’t eaten."
+    "And he’s maybe a little flustered."
+
+    # show hiro flustered
+
+    hiro "N-no, but..."
+    hiro "I made it for you."
+    hiro "I... have a sense you might not have had a cooked meal in a while, so this was really n-no issue."
+
+    "I cross my arms and actually smile at him."
+
+    mc "We should eat together. And then I'll rate your cooking."
+
+    "He gives me a surprised look and we walk over to the table where he had served the food."
+    "I have to admit, it’s actually quite endearing how he had woken me up today."
+
+    mc "Wow. I didn’t know that I even had this stocked up…"
+
+    "He gives me an awkward chuckle."
+
+    hiro "I didn’t know either."
+    hiro "I was honestly expecting, uh…"
+    hiro "... a horde of bugs or something."
+
+    "I squint at him."
+
+    mc "I’m not that gross!"
+
+    "He bows his head low in return, mumbling an apology."
+    "This guy!"
+
+    mc "Hey! Come on, it was a joke. Lighten up a little!"
+
+    "When he shows his face again, his cheeks are even more red than I remember."
+    "He lets out a stiff laugh and tries to loosen his shoulders."
+
+    hiro "R-right. Thank you?"
+
+    "I snort and we take our seats together. My stomach grumbles again as I scoop up the food and swallow."
+
+    "My eyes widen at the taste."
+
+    menu:
+        "My eyes widen at the taste."
+        '"This is...!"':
+            call breakfast_reaction_good
+        '"Hmm..."':
+            call breakfast_reaction_neutral
+        "Eat, fast!":
+            call breakfast_reaction_bad
+
+    return
+
+label breakfast_reaction_good:
+    "I look at him with stars in my eyes. Never have I ever cooked something this good for myself in the morning!"
+    "This wonderfully, perpetually nervous kind of a loser minimum wage worker has some tricks up his sleeve!"
+
+    mc "Hiroshi!"
+
+    # show hiro flustered
+
+    hiro "Y–yeah, [name]? H-how is it?"
+
+    mc "How on god's green earth did you ever manage to make a meal as good as this?"
+
+    "He fidgets, but I can see the way his face brightens up when I compliment his cooking."
+
+    hiro "O-oh! Well, I... I live alone, so I..."
+
+    "He gives me a small look, but I can't decipher what it is. Not when I'm busy gulping down on heaven."
+
+    # show hiro happy
+    hiro "I like to learn. A-a lot of things."
+    hiro "And I enjoy a lot of… finer things? Expensive."
+    hiro "And I used to eat a lot of really nice food in… some really good places."
+    # how hiro neutral
+    hiro "Alone."
+    hiro "So… I, maybe, um… thought I could cook at home."
+    # show hiro happy
+    hiro "And I did. A-and I do."
+
+    mc "I can tell. I mean, alone. Alone why? Can I ask that, actually?"
+
+    # show hiro neutral
+    "He tilts his head to the side and encourages me to keep talking."
+
+    mc "The... friend thing. You honestly have no one?"
+
+    "He swallows, his Adam's apple bobbing up and down."
+    "I see him avoid my gaze, and it feels like he’s struggling to speak about it."
+    "But just when I’m about to change the topic--"
+
+    # show hiro sad
+    hiro "My... planet? My h-home is.. A little complicated."
+    # "Then, even lower:"
+    hiro "I don’t think I’m a very good person there, honestly."
+
+    mc "Why do you think so?"
+
+    "He goes silent for a little bit and gently places his utensil down. He seems like he’s pondering something again."
+
+    # show hiro neutral
+    hiro "I-If I answer the question… can you answer it in return, too?"
+
+    "I give him a reassuring half smile."
+
+    mc "Of course. Go ahead."
+
+    "He pushes his plate to the side with his fingers and kind of fidgets a little with his hands."
+    "I picked up now that it’s a habit he does out of stress."
+    "I eat quietly while waiting for him to tell his story."
+
+    # play around with wait times here
+    "..."
+
+    "Wow, he’s really taking his sweet time--"
+
+    hiro "I work as a… cybersecurity agent. A-and my government convinces me that I… am doing a service well, and my status is earned."
+
+    "Huh. Status? What does that have to do with--"
+
+    hiro "I d-don’t feel like I’m doing an honorable service."
+    hiro "Keeping tabs on a lot of people, finding out their most private information… And having to store them somewhere the government can access it so easily."
+    hiro "T-They reward me very, very generously… and make sure I’m also protected."
+    hiro "But the isolation in that job is… draining."
+
+    hiro "But it isn’t only me."
+    hiro "People are forbidden to have… intimate relations. Not after the previous war."
+    hiro "So… I d-don’t really know how to… be… social. Or… decent..?"
+    hiro "S-sorry."
+
+    "Ah. There it is."
+    
+    call my_story_leadup
+
+    return
+
+label breakfast_reaction_neutral:
+    "He looks at me nervously as I chew my food slowly. A small nod of approval leaves me, and he exhales in relief."
+
+    # show hiro flustered
+    hiro "W-well? What do you think?"
+
+    "I have to admit, it’s decent."
+
+    mc "It’s not bad."
+
+    "He gives me a tight lipped smile, and allows himself to eat."
+    "I observe him quietly, and I blurt a question out without really thinking."
+
+    mc "How did you learn to cook like this?"
+
+    # show hiro flustered
+    hiro "W-well, I don’t really… I read a lot of books."
+
+    "I chuckle at that. How cute."
+
+    mc "Books? Didn’t you learn these from, I don’t know, your mom maybe?"
+
+    # show hiro sad?
+
+    "His eyes dart to the side, and my shoulders tense."
+
+    mc "S-sorry, I forgot--"
+
+    # show hiro flustered
+
+    hiro "Now who’s being sexist…"
+
+    "My eyes widened at his statement. The actual nerve!"
+
+    mc "... damn, you got me there."
+
+    "He seems to not take it well, so I give him a pity laugh."
+    "He smiles in return and the tension eases even just for a little bit."
+
+    # show hiro neutral
+    hiro "I… I don’t remember much about my mom growing up."
+    hiro "It was… a strange time to be growing up.."
+    hiro "After the war. I… my form of entertainment and education was reading."
+
+    hiro "There were surprisingly loads of books available in my house."
+    hiro "My parent’s house… That’s honestly what I remember most, and I guess it bled out as I grew up."
+    hiro "I wasn’t… allowed interaction. Much. Not even after I got a job, s-so…"
+
+    "I listen quietly as he continues to try and fight himself to tell me about himself."
+    "I kind of feel like an asshole for judging him so quickly. But not really."
+    "We all have our own shit."
+
+    call my_story_leadup
+
+    return
+
+label breakfast_reaction_bad:
+    "I accidentally shove my utensil deeper than anticipated and the food goes straight down my throat."
+    "I cover my mouth with my hand, shuddering and coughing."
+    "Holy fuck, this is so embarrassing!"
+
+    # show hiro sad
+    hiro "Ah, I’m sorry…"
+    
+    "He’s giving me the goddamn puppy dog eyes again."
+    "Goddamit, this man! My eagerness and greed has betrayed me!"
+
+    mc "N-no!"
+    mc "I mean, it’s fine, it’s great!"
+    mc "The cooking, I mean the food is… it’s great, yummy, really!"
+
+    "He squints his eyes and bites the side of his cheek, thinking if he should believe me or let it pass like that."
+
+    mc "I swear! I was just really, really clumsy and shoved too far down and… choked."
+
+    "I feel my face flush and he clicks his tongue."
+
+    # show hiro neutral
+
+    hiro "You don’t have to… make excuses, you know."
+    hiro "I could just store the food back into the refrigerator--"
+
+    mc "Hiro, I swear, your cooking is fine!"
+    mc "It’s… it’s decent, alright? It’s good."
+
+    "He stays silent and starts poking at his own food, looking like he lost his appetite. Man…"
+
+    hiro "Maybe we should… just clean. I’ll let you finish what you can stomach."
+
+    "We eat in heavy silence, and I kick myself in my head for being so goddamn awkward."
+    
+    return
+
+
+
+label rather_clean:
+    "He kind of frowns and shakes his head at me."
+
+    # show hiro sad
+    hiro "Y-you should really eat. How else are we going to be cleaning if you don’t have the fuel to do anything?"
+
+    menu:
+        "Y-you should really eat. How else are we going to be cleaning if you don’t have the fuel to do anything?"
+        '"You\’re right… Maybe you should eat with me, then!"':
+            "His cheeks flush a deep red. I have to admit, it’s kind of amusing how easily I can make this man flustered."
+        '"Okay, okay. I wouldn’t want your cooking to be for nothing."':
+            "He nods and smiles approvingly, laying out the plate for just me."
+
+            mc "But."
+            
+            "His gaze goes to me."
+
+            # show hiro neutral
+            hiro "But?"
+
+            mc "You have to eat with me. There’s no way I’m eating alone while you sit doing nothing."
+
+    "He gives me a bashful look and takes a seat across from me."
+    "He serves both of us and waits for me to eat before taking a bite himself."
+
+    # show hiro neutral
+    hiro "I noticed… You younger people have some real stubborn tendencies…"
+
+    "I grin."
+
+    mc "At least my joints don’t creak while walking, like you older people."
+
+    "He frowns, and I laugh at him."
+
+    mc "I'm joking!"
+
+    "He seems to loosen up and chuckles awkwardly. While we’re eating our food, I speak up."
+
+    menu:
+        "While we’re eating our food, I speak up."
+        '"How old are you, anyway?"':
+            call how_old
+        '"You don’t seem to be as uncomfortable as yesterday."':
+            call not_uncomfortable
+        '"Why did you cook this dish in particular?"':
+            call why_dish
+
+    mc "Would it be fine if I just… talk about it?"
+
+    "Hiroshi nods eagerly and stops to give me a small smile."
+    
+    # show hiro flustered
+    hiro "O-of course. I asked, so I should listen."
+
+    "I give him a half grin."
+    
+    menu:
+        "I place my utensil down and purse my lip for a moment."
+        "Tell him my story.":
+            call my_story
+        "Be dodgy.":
+            call be_dodgy
+
+    return
+
+label how_old:
+    "Hiroshi swallows his food before answering."
+
+    # show hiro flustered
+    hiro "Can you promise not to make fun of me when I tell you?"
+
+    "I smile mischievously."
+
+    mc "Maybe."
+
+    "He sighs in defeat."
+
+    # show hiro neutral
+    hiro "I'm 30 years old."
+
+    menu:
+        "I'm 30 years old."
+        '"Damn!"':
+            call how_old_damn
+        '"That\'s not so bad."':
+            call how_old_not_bad
+        '"Explains a lot."':
+            call how_old_explains_a_lot
+
+    mc "Sure. Go ahead."
+    
+    # show hiro neutral
+    hiro "H-how did you… get yourself in this mess?"
+
+    "I sigh softly."
+    return
+
+label how_old_damn:
+    "Like clockwork, his face flushes red at my comment. I laugh at him for a good minute before waving my hand in the air."
+
+    mc "Sorry! I mean, I kind of expected it, you know? You seem around that age with the way you move."
+
+    "He pouts and gives me a look, chewing his food slowly."
+
+    # show hiro flustered
+    hiro "...d-do I really seem that old? Is 30 old to you?"
+
+    menu:
+        "Is 30 old to you?"
+        "Yup.":
+            "He looks away and pouts even more. I giggle a little."
+
+            mc "But the way you act feels so much more… juvenile."
+
+            # show hiro embarrassed
+            hiro "I-is… that a bad thing?"
+
+            "I ponder his question."
+
+            mc "I think it depends on context?"
+            mc "Like, it’s fine if you pout when you don’t agree with what I say, or give me an attitude when things don’t go your way. Just as long as you don’t overreact."
+            mc "It’s quite endearing to see someone a little older feel a bit more… human."
+
+            "His gaze goes down on his plate and he adjusts his collar nervously."
+        "Nope.":
+            "His eyes glimmer a bit when I tell him that."
+            "I swear this guy’s face..."
+            
+            # show hiro flustered
+            hiro "Well… I mean why?"
+
+            mc "I don’t really necessarily think it’s old."
+            mc "You get to do a lot of things physically, and have the money to do it, I guess."
+            mc "It’s like a sweet spot for life. You think?"
+
+            "He purses his lips and actually thinks for a moment before responding."
+
+            # show hiro happy
+            hiro "Yeah, I guess so."
+
+            "Without missing a beat--"
+            
+            hiro "I m-mean… do you think I look younger than I actually am?"
+
+            "Honestly? He looks a little youthful, save for the eyebags and the slightly growing stubble on his chin."
+            "His skin is surprisingly clear for someone who looks like they never get a wink of sleep."
+            "And his eyes when he looks at me with a curious gaze… they kind of sparkle nicely--"
+
+            "Wait. What the hell am I saying?"
+
+            mc "You look just fine, Hiro. Quite good for your age."
+
+            "He gives me a sheepish smile."
+
+            # show hiro embarrassed
+            hiro "T-thanks."
+
+    "He shakes his head and continues to eat. "
+    
+    hiro "I think that’s enough about me. I… can I ask about you?"
+
+    return
+
+label how_old_not_bad:
+    "He gives me a hesitant look."
+
+    # show hiro flustered
+    hiro "Oh. T-then…  Yeah. I’m 30. Can I ask how old you are?"
+
+    "I shrug and smile."
+
+    mc "I would assume I’m around your age if that was my reaction, no?"
+
+    "He gives me a tight lipped look and I wave my hand to dismiss it."
+
+    mc "I don’t think you need to worry about looking old. What matters more is how you feel."
+    mc "Like, do your joints really creak while walking? Because mine don’t."
+
+    "I flash him a grin. He gives me a scoff, smiling a little wider."
+
+    hiro "Well… maybe you just have some really lucky genes if they don’t do that."
+
+    mc "Oh? So you are admitting that yours creak?"
+
+    hiro "I never said..!"
+
+    "I laugh heartily. It’s been a long while since I did that."
+
+    mc "I never said it was bad, either! It’s a normal part of getting old! Like needing to wear glasses to see better."
+
+    hiro "I d-don’t think there’s a correlation with bad sight and age!"
+
+    mc "Oh yeah? Where’s your scientific study?"
+
+    hiro "I-I mean, there is! But bad sight could just be caused by--"
+
+    mc "Genes, right?"
+
+    "He looks just about as flustered as he is frustrated. It’s pretty funny."
+
+    hiro "You’re not giving me a fair shot here. And I made you food!"
+
+    "We gave each other a look and burst out laughing. For a kind of loser, he’s kind of nice to just talk to."
+
+    "He shakes his head and continues to eat. "
+
+    hiro "I think that’s enough about me. I… can I ask about you?"
+
+    return
+
+label how_old_explains_a_lot:
+    # show hiro flustered
+    hiro "What… what is that supposed to mean?"
+
+    mc "It means, it explains a lot why you do what you do, no?"
+
+    "He frowns in confusion."
+
+    hiro "I don’t understand…"
+
+    mc "You know."
+    mc "The way you kind of carry yourself,"
+    mc "the reactions you have to the mess that is in my home,"
+    mc "and how you kind of speak makes me think that you’re a little more seasoned than I give you credit for."
+
+    hiro "I-is that a compliment?"
+
+    "I smile playfully."
+
+    mc "You’re older. Wouldn’t you know that better?"
+
+    "He shakes his head and continues to eat."
+
+    hiro "I disagree, but I think that’s enough about me. I… can I ask about you?"
+
+    return
+
+label not_uncomfortable:
+    "He gives me a shrug with a contemplative look."
+
+    hiro "Maybe I’m just… much more acclimated to the mess. It starts to feel a little numbing after a long while of being… overwhelmed, honestly."
+    hiro "I don’t want to be… I d-didn’t want to react like that, just so you know."
+
+    "I raise an eyebrow."
+
+    mc "Like what, exactly?"
+
+    hiro "L-like, being uncomfortable. Or the… gagging. Or anything else offensive."
+    hiro "I… was just really surprised, and I… I am sorry again for reacting like that."
+    hiro "It didn’t occur to me that it was off putting for you, o-or… embarrassing?"
+
+    "I huff quietly. So he does have a heart somewhere."
+
+    mc "I still don’t forgive you entirely."
+    mc "But… thanks. And… sorry. I know it can feel really jarring to be in here."
+
+    "He gives me a look, like he wants to ask something. I nod."
+
+    hiro "Can… you tell me how you got yourself in this mess in the first place?"
+
+    "I sigh gently."
+
+    return
+
+label why_dish:
+    "He thinks for a moment, taking another bite before answering."
+
+    # show hiro neutral
+    hiro "I just… I made do of what was in your pantry."
+    hiro "I-I… I thought how I acted yesterday wasn’t very… um… appropriate, especially since I’m the one i-in your house."
+    hiro "A-and… I figured you would have been hungry after getting upset. Because {i}I{/i} would have…"
+
+    "Huh. So he does have some composure."
+
+    mc "Thanks. What you cooked is quite nice."
+
+    "He gives me a timid smile."
+
+    # show hiro flustered
+    hiro "I’m glad you t-think so."
+    hiro "It was… interesting, challenging, yes."
+    hiro "To um… go through your pantry and look for something. And… something I would know to cook, a-actually."
+
+    "I tilt my head to the side, eyeing him playfully."
+
+    mc "So you went through my stuff without asking permission?"
+
+    "He immediately turns pink and I have to hold in my laughter like a sin."
+
+    hiro "I-I thought-- maybe if I-- oh I’m... shit--"
+
+    "I burst out laughing, feeling actually really bad for him as he sits there stunned to silence."
+
+    mc "Chill out, Hiro! It’s okay."
+    mc "If I’m honest… I’m grateful you cooked. And… maybe slightly got over that gagging problem."
+    mc "I’m grateful you’re here to help me."
+
+    "I give him an encouraging smile, and he turns pinker."
+
+    mc "You know what? Maybe… I won’t forgive you."
+
+    hiro "W-what? Why?"
+
+    mc "You need to cook for me. All the time now."
+
+    "He’s silent for a bit and then we both burst into laughter."
+
+    hiro "S-see, that wouldn’t be a problem for me if..."
+
+    mc "If?"
+
+    "He shoots me a curious gaze."
+
+    hiro "Can... I ask s-something a little more... serious?"
+
+    "I nod coolly."
+
+    hiro "How.. h-how did you um… get into this mess?"
+
+    "I sigh quietly."
+
+    return
+
+
+label not_hungry:
+    "His face drops instantly. He shakes his head and gives me an attempt to smile, albeit strained."
+
+    # show hiro frustrated
+    hiro "Y-you’re joking, right?"
+
+    "Setting the dishes down, he dusts his hands off on the kitchen towel cloth and gives me a stern look."
+
+    "Why not?"
+
+    menu:
+        "Why not?"
+        '"I\'m just not hungry."':
+            $not_hungry_reason = "not hungry"
+        "Scoff and roll your eyes.":
+            $not_hungry_reason = "scoff"
+        '"We could just put it in the fridge and eat later?"':
+            $not_hungry_reason = "eat later"
+
+    if not_hungry_reason == "not hungry":
+        "He takes a moment to process my words with furrowed brows."
+
+        hiro "How could you not be hungry when you literally slept through yesterday without eating?"
+        mc "That’s none of your business? I’m simply not hungry?"
+
+        "He frowns and shakes his head."
+        "He grabs the plates and opens the refrigerator door, shoving the meals inside harshly."
+        "He turns to me but doesn’t meet my gaze."
+
+        hiro "You don’t know the shit I dug through in your nasty fridge just to make you breakfast. You brat."
+
+        mc "Excuse me?"
+
+        "He scoffs and I inhale sharply, utterly flabbergasted."
+
+    elif not_hungry_reason == "scoff":
+        "I see him grit his teeth, his hand balling up into a fist."
+
+        hiro "Answer me and don’t give me that attitude."
+        hiro "You have no idea what shit I had to shovel out just to prepare you that food."
+
+        mc "You’re unbelievable. I just said I’m not hungry and you’re suddenly so worked up about it?"
+
+        hiro "And I’m asking why like a grown fucking adult."
+        hiro "You couldn’t give me a proper response? Or at least be grateful I cooked for you, you brat?"
+
+        mc "I didn’t ask you to cook."
+
+        "With a frustrated grunt, he slams his hands down on the table and takes the plates away, shoving them into the fridge."
+        "His back is turned when he speaks in a lower voice."
+
+    elif not_hungry_reason == "eat later":
+        hiro "But this food is better eaten when it’s fresh. You don’t want to try it, at least?"
+
+        mc "I just said I’m not hungry!"
+
+        "Out of nowhere, he slams his hands down and stares at me with a piercing glare."
+
+        hiro "I’ve spent a good amount of my own time digging through what you call your fridge and {i}this{/i} is the thanks I get?"
+        hiro "You fucking brat."
+
+        "Before I can even retaliate, he grabs the plate and shoves them back inside my refrigerator."
+        "He slams the door and speaks eerily calmly."
+    
+
+    hiro "...we should just start cleaning. Forget I said anything."
+
+    return
+
+
+
+
+label my_story_leadup:
+    # show hiro flustered
+    hiro "I don’t think I like talking about it right now..."
+
+    "He gives me a solemn look. I wave my hands and smile awkwardly."
+
+    mc "Don’t worry about it! I mean… I kind of get it?"
+    mc "I mean, look at my mess, right?"
+
+    "He gives me a stiff smile and I nod."
+
+    # show hiro neutral
+    hiro "Can… can I ask about you, now? What about you?"
+
+    "I place my utensil down and purse my lip for a moment."
+
+    menu:
+        "I place my utensil down and purse my lip for a moment."
+        "Tell him my story.":
+            call my_story
+        "Be dodgy.":
+            call be_dodgy
+    return
+
+label my_story:
+    mc "I… used to be successful. So, so successful. I worked hard for the things I wanted."
+
+    "I grip the hem of my shirt, a strange feeling bubbling over my chest as I open up to him."
+
+    mc "But then, shit kept hitting the fan. I didn’t know what to do, so I did the one thing I knew that would comfort me."
+    mc "I spent so much money."
+
+    "I kind of look up and see Hiroshi debating with himself if he should say something or not. I keep talking."
+
+    mc "I know you must think I’m... irresponsible."
+    mc "And I am. I know. I… know what I need to fix, the risks I faced when indulging myself in the adrenaline of material gratification."
+    mc "It’s..."
+    mc "...something I need to work on."
+
+    "Of course, I see him basically sweating, on the verge of asking so many more questions. I give him a small chuckle."
+
+    mc "... we should try focusing on the task now, I think."
+    mc "And, thank you for breakfast."
+
+    "He swallows and nods, giving me a thumbs up."
+
+    return
+
+label be_dodgy:
+    "I feel his gaze on me, and I feel anything but comfortable opening up to this guy."
+
+    mc "I... had some trouble keeping myself controlled. With spending money. I mean, you see my place, it must be a huge problem, right?"
+
+    "I laugh to ease the air but he looks at me intensely."
+
+    # show hiro frustrated
+
+    hiro "That’s it?"
+    
+    mc "...pretty much?"
+
+    "He crosses his arms and leans back on his chair."
+
+    hiro "That simply can’t be."
+    hiro "Don’t you... where are your parents? A-aren’t you... surrounded by company?"
+
+    "I shake my head firmly. He scoffs."
+    "Wow."
+
+    hiro "That’s just great. Well. Unbelievable."
+    hiro "And here I thought we were… y-you were…"
+
+    mc "What?"
+
+    "He shakes his head and gives me a bitter look. I shoot the same look back and cross my arms."
+
+    mc "...look. Let’s just get back to cleaning. I don’t want to make this a bigger deal than you’re making it seem."
 
     return
