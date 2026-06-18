@@ -58,13 +58,13 @@ label hiro_D3_A:
     # alladat choice shit
 
     menu:
-    "He's waiting for me to respond."
-    "Have you eaten? Do you wanna eat with me?":
-        call eating_breakfast
-    "I'd rather clean...":
-        call rather_clean
-    "This is all really nice, but I'm not hungry.":
-        call not_hungry
+        "He's waiting for me to respond."
+        "Have you eaten? Do you wanna eat with me?":
+            call eating_breakfast
+        "I'd rather clean...":
+            call rather_clean
+        "This is all really nice, but I'm not hungry.":
+            call not_hungry
 
     # ending that choice shit
 
