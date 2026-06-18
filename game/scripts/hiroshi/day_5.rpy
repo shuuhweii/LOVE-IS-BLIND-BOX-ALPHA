@@ -1,5 +1,6 @@
     # HIROSHI'S DAY 5
 
+define mc = Character("MC", color="#FFFFFF")
 
 label hiro_D5:
     "I find myself seated in the dining area again, this time actually seeing the kitchen and dining room in full view."
@@ -23,17 +24,18 @@ label hiro_D5:
     "I  shake my head to focus."
 
     # if hiro_affinity_positive:
-        call hiro_D5_good
+        # call hiro_D5_good
 
     # elif hiro_affinity_negative:
-        call hiro_d5_bad
+        # call hiro_d5_bad
+    call hiro_d5_bad
 
     return
 
 label hiro_D5_good:
-    menu:
-        "Sorry. Um, with sugar.":
-        "Just black.":
+    # menu:
+    #     "Sorry. Um, with sugar.":
+    #     "Just black.":
     return
 
 label hiro_D5_bad:
@@ -67,8 +69,12 @@ label hiro_D5_bad:
 
     mc "No, actually. I'd like you to sit down. I wanna talk about something with you."
 
+    # hide hiro
+
     "He gulps nervously, but he pulls a chair out anyway, placing his own mug down on the table."
     "He sits and folds his hands over one another and nods."
+
+    # show hiro neutral
 
     hiro "Talk about what?"
 
@@ -80,5 +86,28 @@ label hiro_D5_bad:
 
     "I nod quietly, eyeing the containers. Then my gaze falls back to him."
     "He starts shifting in his seat nervously."
+    
+    hiro "Um... was that what you wanted to talk about? Or..."
+
+    menu:
+        "I'm really grateful for your help for the past few days. But...":
+            pass
+    
+    "He looks at me like he knows what I'm about to say."
+
+    mc "I just..."
+    mc "I don't feel like I'll really be able to ever be comfortable with you."
+    mc "You're just..."
+    mc "... the things you did just..."
+
+    # show hiro sad
+    hiro "... take your time. I'm listening."
+
+    "I rest my elbow on the table, rubbing my temple in frustration."
+
+    mc "Everything you did and said for the past few days... I cannot and will not be able to forgive you, or move on from it."
+    mc "It feels overwhelming to me, and I do not appreciate the fact that when I was considering the choice of trusting you,"
+    mc "you go ahead and do something I never thought another person could do to others."
+    mc "Your behavior... is too much to me."
 
     return
