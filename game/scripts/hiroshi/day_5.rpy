@@ -110,4 +110,62 @@ label hiro_D5_bad:
     mc "you go ahead and do something I never thought another person could do to others."
     mc "Your behavior... is too much to me."
 
+    "His gaze drops to his hands, completely avoiding my stare."
+
+    mc "I... I think you can be a good person in your own way."
+    mc "But I don't think I want to be the one to see you through that."
+    mc "I... don't want to be the one to stay and understand you through all the mistakes you're bound to make."
+
+    "When I finish telling him what I wanted to say, I feel a weight lift off my shoulders."
+    "But... I don't really feel good about it."
+
+    # show hiro sad
+    hiro "I... alright. I'm sorry. For everything."
+
+    # hide hiro
+    "Nothing is said after that. We continue to sip our own drinks under the heavy weight of my confession, and I despise the feeling."
+    "It's not like I loathe him, but it doesn't feel right either if we continue to be with each other for longer."
+    "I hope by the end of the week, I can talk to Mystery Sponsor to ask to take Hiroshi back."
+    
+    mc "... do you have any idea how to summon Mystery Sponsor?"
+
+    "He shakes his head without uttering a single word."
+
+    mc "...do you think he’ll... take you back?"
+    mc "After the whole deal, since we kind of fulfilled our end."
+
+    "He doesn’t even meet my eyes. He simply shrugs, refusing to communicate properly or speak."
+    "I feel the tension at an all time high. It’s so quiet you could hear a pin drop."
+
+    mc "...are you hungry?"
+
+    "..."
+
+    # show hiro sad
+    "No, no."
+
+    "He doesn’t really offer anything after that, either. No mention of wanting to cook for me... or any conversation either."
+
+    "I hate this."
+    "I hate this I hate this I hate this."
+
+    mc "I'm... going back to my room."
+
+    "He turns his back on me and sighs, standing up to go to the kitchen counter."
+
+    hiro "Yeah, just... just leave your mug. I’ll clean up."
+
+    "I nod quietly and push the mug away from me, standing up and feeling the coldness in the air despite the morning sun shining through the dining room windows."
+    "When I get back to my room, I make sure to shut the door and lock it. I lie down and contemplate what I had just said."
+
+    "It’s not my fault. I just… I don’t entirely hate him."
+    "But I don’t think I could stand the feeling of him being around me, and I don’t think I can have any kind of amicable relationship with him knowing what he had done in his past, to me, and the kind of person he is when he gets on edge or upset."
+    "It’s like I can never be in any kind of wrong, and I can’t ever be safe around him."
+
+    "I cover my face in my pillow. I know the day just started, but I just want it to be over already."
+    "I can hear his footsteps dragging across the floor from outside. I wonder if he’s still cleaning, or… what is he doing?"
+
+    "I shake my head. I shouldn’t even be thinking about it anymore. The deal has been fulfilled, and I just have to wait for what tomorrow will bring."
+    "In a tired state, I roll to my side on the bed, shutting my eyes, and waiting for sleep to claim me once more."
+
     return
