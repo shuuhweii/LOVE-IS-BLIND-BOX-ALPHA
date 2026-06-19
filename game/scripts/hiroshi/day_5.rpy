@@ -76,7 +76,7 @@ label hiro_D5_good:
             call hiro_D5_good_B1
         '"We\'re messed up."':
             call hiro_D5_good_B2
-            
+
     return
 
 label hiro_D5_good_A1:
@@ -161,6 +161,21 @@ label hiro_D5_good_A2:
     return
 
 label hiro_D5_good_B1:
+    # show hiro flustered
+    "A blush forms on his cheeks. I don't think I'll ever get tired of seeing that."
+
+    hiro "What... makes you say that?"
+
+    "My grip tightens around the warm mug, and I feel my own face heating up. Tapping the side of the ceramic, I inhale deeply before talking."
+
+    mc "I believe we both lost ourselves in our selfish desire. The desire to fill the void within ourselves, because indulgence felt much better than changing ourselves for the better..."
+
+    # show hiro neutral
+    "He looks at me intently, his hands clasped a bit more tightly now."
+
+    mc "I'm... selfish. I want..."
+
+    hiro "Yeah?"
     return
 
 label hiro_D5_good_B2:
