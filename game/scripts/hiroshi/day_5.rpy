@@ -25,22 +25,121 @@ label hiro_D5:
 
     # if hiro_affinity_positive:
         # call hiro_D5_good
-
     # elif hiro_affinity_negative:
         # call hiro_d5_bad
-    call hiro_d5_bad
+
+    menu:
+        "Positive Hiroshi Affinity Branch":
+            call hiro_D5_good
+        "Negative Hiroshi Affinity Branch":
+            call hiro_D5_bad
 
     return
 
 label hiro_D5_good:
     # menu:
-    #     "Sorry. Um, with sugar.":
-    #     "Just black.":
+    #    hiro "How do you like your coffee?"
+    #     '"Sorry. Um, with sugar."':
+    #         call hiro_D5_good_A1
+    #     '"Just black."':
+    #         call hiro_D5_good_A2
+
+    "As I wrap my fingers around the warm mug, I let the heat seep onto my palms and I sigh in comfort."
+    "He looks at me with gentle eyes before speaking."
+
+    # show hiro neutral
+    hiro "Is there anything you would like me to make for breakfast today?"
+
+    "I shake my head slowly, sipping my hot drink."
+
+    mc "No, actually. I'd like you to sit down. I wanna talk about something with you."
+
+    "He gulps nervously, but he pulls a chair out anyway, placing his own mug down on the table."
+    "He sits and folds his hands over one another and nods."
+
+    hiro "Talk about what?"
+
+    mc "Well... first things first. Where did you put my piles from yesterday?"
+
+    "Hiroshi points to two boxes situated on the floor near the cabinet, filled with the items I sorted yesterday."
+    
+    hiro "I didn't throw anything away. They're stacked inside those boxes and I trust that you know what to do with them without me."
+
+    "I nod quietly, eyeing the containers. Then my gaze falls back to him."
+    "He starts shifting in his seat nervously."
+    
+    hiro "Um... was that what you wanted to talk about? Or..."
+
+    menu:
+        hiro "Um... was that what you wanted to talk about? Or..."
+        '"I realized we have a lot of things in common."'
+        '"We\'re messed up."'
+    
+    return
+
+label hiro_D5_good_A1:
+    # show hiro happy
+
+    "He nods and starts to prepare the drink just the way I like it."
+
+    hiro "I like it sweet, too. I might have a bias for sweeter things, actually."
+
+    mc "Hm. Really?"
+
+    hiro "Yeah. I love eating dessert."
+    hiro "How many spoons of sugar?"
+
+    menu:
+        "How many spoons of sugar?"
+        "Tell him your preferred amount.":
+            # show hiro neutral
+
+            hiro "Got it. Here."
+        "Ask how many he puts in his.":
+            # show hiro flustered
+
+            hiro "Um, why do you wanna know?"
+
+            mc "Why don't you wanna tell me? Is it an embarrassing amount?"
+
+            "He gives me a bashful look and frowns."
+
+            hiro "There's no such thing as an embarrassing amount of sugar... is there?"
+
+            "I grin softly."
+
+            mc "Maybe. I want as much sugar as you do."
+
+            "He shakes his head and chuckles."
+
+            # show hiro happy
+
+            hiro "Alright, alright. I got it. Here."
+
+    "He hands me the steaming cup of coffee with a gentle smile."
+
+    return
+
+label hiro_D5_good_A2:
+    # show hiro neutral
+
+    hiro "Got it. Can't say you look like a black coffee enjoyer."
+
+    # hide hiro
+
+    "I hear him pouring my drink."
+
+    menu:
+        "I'm not.":
+            pass
+        "Am I supposed to look a certain way to enjoy black coffee?":
+            pass
+
     return
 
 label hiro_D5_bad:
     menu:
-        "I don't want coffee.":
+        '"I don\'t want coffee."':
             pass
     
     "I see him nod."
@@ -53,7 +152,7 @@ label hiro_D5_bad:
 
     hiro "Alright. Give me a moment."
 
-    hide hiro
+    # hide hiro
 
     "He sets up the kettle on the side and tends to my request.
     I wait patiently and watch him serve me the hot water, handing me the mug with care."
@@ -90,7 +189,7 @@ label hiro_D5_bad:
     hiro "Um... was that what you wanted to talk about? Or..."
 
     menu:
-        "I'm really grateful for your help for the past few days. But...":
+        '"I\'m really grateful for your help for the past few days. But..."':
             pass
     
     "He looks at me like he knows what I'm about to say."
