@@ -141,6 +141,7 @@ label hiro_D3_A:
     hiro "I've smelt better..."
 
     menu:
+        hiro "I've smelt better..."
         '"Wow. So am I not up to standard?"':
             $ candle_reaction = "not up to standard"
         '"Maybe it\'s not your type."':
@@ -171,6 +172,7 @@ label hiro_D3_A:
     mc "It's..."
 
     menu:
+        mc "It's..."
         "... calming.":
             $ candle_reason = "calming"
         "... for my collection.":
@@ -253,7 +255,7 @@ label hiro_D3_A:
     hiro "Do you think buying cheaper is better than expensive?"
 
     menu:
-        "Do you think buying cheaper is better than expensive?"
+        hiro "Do you think buying cheaper is better than expensive?"
         '"Yes, but it depends."':
             $ cheaper_vs_expensive = "yes"
         '"No, but..."':
@@ -446,6 +448,8 @@ label hiro_D3_A:
     "He's heaving on me at this point, and I could see his face flushed in anger."
     "I feel my throat constrict, and my eyes get teary."
 
+    window hide
+
     menu:
         "Push him off.":
             pass
@@ -453,6 +457,8 @@ label hiro_D3_A:
             pass
         "Push him off.":
             pass
+
+    window show
 
     "Shakily, I attempt to gather myself to pull my wrists down to escape from him."
     "When I successfully do, I shove him with all my strength, caushing his stature to step back."
@@ -749,7 +755,7 @@ label rather_clean:
     hiro "Y-you should really eat. How else are we going to be cleaning if you don’t have the fuel to do anything?"
 
     menu:
-        "Y-you should really eat. How else are we going to be cleaning if you don’t have the fuel to do anything?"
+        hiro "Y-you should really eat. How else are we going to be cleaning if you don’t have the fuel to do anything?"
         '"You\’re right… Maybe you should eat with me, then!"':
             "His cheeks flush a deep red. I have to admit, it’s kind of amusing how easily I can make this man flustered."
         '"Okay, okay. I wouldn’t want your cooking to be for nothing."':
@@ -778,7 +784,8 @@ label rather_clean:
 
     mc "I'm joking!"
 
-    "He seems to loosen up and chuckles awkwardly. While we’re eating our food, I speak up."
+    "He seems to loosen up and chuckles awkwardly."
+    "While we’re eating our food, I speak up."
 
     menu:
         "While we’re eating our food, I speak up."
@@ -799,7 +806,7 @@ label rather_clean:
     "I give him a half grin."
     
     menu:
-        "I place my utensil down and purse my lip for a moment."
+        "I give him a half grin."
         "Tell him my story.":
             call my_story
         "Be dodgy.":
@@ -823,7 +830,7 @@ label how_old:
     hiro "I'm 30 years old."
 
     menu:
-        "I'm 30 years old."
+        hiro "I'm 30 years old."
         '"Damn!"':
             call how_old_damn
         '"That\'s not so bad."':
@@ -847,10 +854,11 @@ label how_old_damn:
     "He pouts and gives me a look, chewing his food slowly."
 
     # show hiro flustered
-    hiro "...d-do I really seem that old? Is 30 old to you?"
+    hiro "...d-do I really seem that old?"
+    hiro "Is 30 old to you?"
 
     menu:
-        "Is 30 old to you?"
+        hiro "Is 30 old to you?"
         "Yup.":
             "He looks away and pouts even more. I giggle a little."
 
@@ -1074,10 +1082,10 @@ label not_hungry:
 
     "Setting the dishes down, he dusts his hands off on the kitchen towel cloth and gives me a stern look."
 
-    "Why not?"
+    hiro "Why not?"
 
     menu:
-        "Why not?"
+        hiro "Why not?"
         '"I\'m just not hungry."':
             $not_hungry_reason = "not hungry"
         "Scoff and roll your eyes.":
