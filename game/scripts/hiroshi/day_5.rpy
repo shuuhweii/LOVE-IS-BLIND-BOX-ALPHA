@@ -37,12 +37,12 @@ label hiro_D5:
     return
 
 label hiro_D5_good:
-    # menu:
-    #    hiro "How do you like your coffee?"
-    #     '"Sorry. Um, with sugar."':
-    #         call hiro_D5_good_A1
-    #     '"Just black."':
-    #         call hiro_D5_good_A2
+    menu:
+        hiro "How do you like your coffee?"
+        '"Sorry. Um, with sugar."':
+            call hiro_D5_good_A1
+        '"Just black."':
+            call hiro_D5_good_A2
 
     "As I wrap my fingers around the warm mug, I let the heat seep onto my palms and I sigh in comfort."
     "He looks at me with gentle eyes before speaking."
@@ -72,9 +72,11 @@ label hiro_D5_good:
 
     menu:
         hiro "Um... was that what you wanted to talk about? Or..."
-        '"I realized we have a lot of things in common."'
-        '"We\'re messed up."'
-    
+        '"I realized we have a lot of things in common."':
+            call hiro_D5_good_B1
+        '"We\'re messed up."':
+            call hiro_D5_good_B2
+            
     return
 
 label hiro_D5_good_A1:
@@ -131,10 +133,264 @@ label hiro_D5_good_A2:
 
     menu:
         "I'm not.":
-            pass
-        "Am I supposed to look a certain way to enjoy black coffee?":
-            pass
+            # show hiro neutral
+            hiro "Oh?"
 
+            "He hands me the mug full of freshly brewed coffee, and I take a small inhale before answering."
+
+            mc "Yeah. I just need to be awake right now."
+        "Am I supposed to look a certain way to enjoy black coffee?":
+            "He looks back at me with an embarrassed expression and shakes his head."
+
+            # show hiro flustered
+            hiro "I-I don't think-- no, of course not."
+
+            "I roll my eyes and grin. He huffs softly."
+
+            hiro "You're teasing me again."
+
+            mc "When aren't I?"
+
+            hiro "You're unbelievably mean."
+
+            mc "And you're easy to tease."
+
+            "He has a tight lipped smile on his face when he arrives with my mug, trying not to laugh."
+
+            hiro "Here you go."
+    return
+
+label hiro_D5_good_B1:
+    return
+
+label hiro_D5_good_B2:
+    "He blinks."
+
+    # show hiro flustered
+    hiro "What?"
+
+    mc "...we’re messed up, Hiro."
+    mc "We both lost ourselves in our selfish desire. The desire to fill the void within ourselves, because indulgence felt much better than changing ourselves for the better."
+    
+    # show hiro neutral
+    "He swallows nervously, not knowing what to say."
+    
+    mc "..."
+
+    hiro "..."
+
+    mc "... but do you know what else I learned?"
+
+    hiro "... what?"
+
+    "My lips quirk up to a smile."
+
+    mc "... you helped me get out of my rut. Even if it was... unwilling."
+
+    # show hiro happy
+
+    "I hear him laugh. Genuinely. The sound of it brightens up the mood."
+
+    mc "I got so lost in my own misery that I forgot what it’s like to have someone else see me like this."
+    mc "Having someone occasionally invade your headspace... is actually quite nice."
+
+    # show hiro neutral
+
+    "He sips his drink, listening closely. I look at him seriously, tapping the side of my mug."
+
+    mc "I know we... had our differences."
+    mc "And as much as I wanted to stay upset at you, I know it won't get us anywhere. And you seem to understand not to push it when I'm upset."
+
+    # show hiro happy
+
+    "I grin, and he chuckles softly."
+
+    mc "Imagine if we had other people. Friends that help us get out of our minds every once in a while."
+    mc "Wouldn't you like that?"
+
+    # show hiro neutral
+
+    "There's a moment where he quietly debates with himself on what his response is going to be."
+
+    hiro "... I'm not used to... people."
+
+    mc "You got used to me, didn't you?"
+
+    hiro "In a sense, yes... But I'm not sure just how good it would be if there were more."
+    hiro "You miss your... companions, right?"
+
+    mc "... I do. All the time."
+
+    "Things get quiet between us as we look down on our drinks, sipping and simply contemplating."
+
+    menu:
+        "Things get quiet between us as we look down on our drinks, sipping and simply contemplating."
+        "Tell a story about your friends.":
+            mc "I used to go out all the time."
+            mc "I really liked to just... explore new cafes and stuff with my friends. They were also the ones that taught me about the latest hype with everything."
+            mc "Latest bands, trending things... stuff like that."
+            mc "There are days where we don’t really meet each other because of our schedules, but they were always down to call with me if I had asked."
+            mc "They also reached out to me to keep me updated on their lives and I... felt the most loved when they did."
+            mc "I cared about them a lot."
+        "Tell a story about your workmates.":
+            mc "I used to work in an office full of... a lot of interesting people."
+            mc "Despite our differences, we were all amicable towards one another. I liked my job too, but... the people there were usually the ones that made me want to go to work everyday."
+            mc "The cubicle conversations, the after meeting talks, the team building activities... I think management knew what they were doing, because I enjoyed them all. Even during late night overtime work and tiring shifts... They kept morale up."
+            mc "They honestly kept me going and made me forget how hard work could be."
+        "Tell a story about your family.":
+            mc "I used to live with my family."
+            mc "They were always so supportive of what I do, no matter how ridiculously ambitious my dreams were. I believe they’re the reason why I was successful."
+            mc "If it wasn’t for their encouragement, I wouldn’t be brave enough to even move out and live on my own."
+            mc "I didn’t want them to think that I always relied on them... so I stopped asking for help."
+
+    mc "They shaped the person I am."
+    mc "But... I got lost with myself during the pandemic, and did no work maintaining my relationships because I felt too ashamed."
+
+    mc "They were always there for me, and I feel bad that we basically had no contact for the past years."
+    mc "I want to try and reach out now... because of you."
+    mc "You made me remember what it's like to have people to care about, and have people care about you."
+
+    # show hiro flustered
+    "His face flushes, and I chuckle."
+
+    mc "I'd love to introduce you to them."
+
+    # show hiro neutral
+    hiro "... You would? What if they don't like me? And, it might be too much of a hassle to you..."
+    hiro "Don't you think I've taken up enough of your time and space?"
+
+    mc "Inconvenience is the price for community, Hiro. I don't mind, if ith elps you and I grow out of our shells."
+
+    "He puts his lips in a thin line before looking down again, stirring his sweetened coffee."
+    # show hiro happy
+    "Then, he smiles."
+
+    hiro "... I'd like that. As long as you promise not to leave me alone."
+
+    mc "Let me think about it..."
+
+    "He gives me a shy look. We take in the quiet morning, the way the dining room feels so much nicer after everything has been cleared and cleaned."
+    "I take a sip of my drink."
+
+    window hide
+
+    menu:
+        '"What do you think will happen tomorrow?"':
+            window show
+            
+            # show hiro neutral
+            "He sighs heavily."
+
+            hiro "I have no idea."
+            hiro "I mean, after helping you I assumed I'll just disappear, or turn back into a figurine. I feel quite silly thinking about it."
+            hiro "But then again... I do feel apprehensive thinking that I could just... be gone again."
+            hiro "Just like how I was gone from my world."
+        '"What do you think of me?"':
+            window show
+
+            # show hiro flustered
+            "He sighs softly."
+
+            hiro "I think you have a lot of potential to get back up again."
+            hiro "I know for the past few days, I probably saw nothing but your lowest points... but with what you've told me, you're so much more capable than I ever feel like I will be."
+            hiro "You have a lot of life to look forward to."
+        '"What are you thinking right now?"':
+            window show
+
+            # show hiro neutral
+            "He sighs quietly."
+
+            hiro "Just... a lot of things that have happened so far."
+            hiro "Being poofed, meeting you, helping you clean up... and figuring out who you are as a person."
+            hiro "I feel overwhelmed from everything happening in such a small amount of time..."
+
+    # show hiro neutral
+    hiro "... But all that aside, is it okay to assume that we're... friends?"
+
+    menu:
+        hiro "... But all that aside, is it okay to assume that we're... friends?"
+        '"Yes, of course."':
+            pass
+        '"Maybe."':
+            pass
+    
+    # show hiro happy
+
+    "He looks to the side smiling and fidgets with his hands."
+
+    hiro "I'm glad. Thank you."
+    hiro "... For being a friend."
+
+    "I chuckle at the cheesiness of the situation. Though I really do appreciate how far he had come in just a span of a week."
+
+    mc "We have the entire day for ourselves. Is there anything you wanna do?"
+
+    # show hiro flustered
+    hiro "If you wouldn't mind... I could continue helping you set up the keep pile for the trinkets you chose."
+
+    "I'm already giddy just thinking about decorating the place."
+
+    mc "Really?"
+
+    # show hiro happy
+    hiro "Of course."
+
+    mc "Okay, okay. Only if you let me yap about why I got those things."
+
+    # show hiro flustered
+    hiro "Y-yap?"
+
+    mc "Talk. I'm going to infodump you on those purchases."
+
+    hiro "Info... dump?"
+
+    # show hiro happy
+    "As I'm about to explain again for the third time, he has a sly grin on his face."
+    "He's making fun of me!"
+
+    mc "You knew what I meant and still made me talk!"
+
+    "I shove him playfully and he laughs, rubbing his arm."
+
+    hiro "Sorry. I thought I could try and tease you back."
+
+    "I grin. I like this playful side of him."
+
+    # hide hiro
+    "We finish our drinks and he cleans up our mugs. I gather the box with my chosen stuff to keep to the table and place them down gently."
+    "I pull the chair back to sit down again and rest my cheek on my palm, contemplating where I should put them. I hear the water stop running and Hiro coming over to sit next to me."
+
+    # show hiro happy
+    hiro "Go ahead. Where do you want to start?"
+
+    "Smiling, I pull out all the items in the box and describe in detail the absurdity of how and why I got them."
+
+    mc "I got this limited edition Gisney’s Royal and the Animal Luminous candle holder from my parents when I first moved to this apartment."
+    mc "I told them it was my favorite movie from when I was like, 8, and they never let me live it down."
+
+    "I place the golden holder down and take another item. I can see him smiling in the corner of my eye."
+
+    mc "This is a rare misprinted vinyl record of my favorite band, GABBA."
+    mc "I knew I had to get it because I was given a record player as a reward for rising up the ranks in my job."
+    
+    hiro "In your bedroom? We could try setting it up here in the dining area away from your cooking area to at least give the place some ambience."
+    
+    mc "And this one is my 2003 release, glass forged Thomathy and Jeremiah flower vase I bought when I was in Comic Bunch Studios with my friends to see their favorite artists’ work."
+    
+    # hide hiro
+    "For the rest of the day, I tell him the origin stories of all the collectibles I’ve gathered over the years I felt that I truly wanted to keep. He helps me put it all up around the kitchen and dining area where it won’t be too cluttered and obstructive."
+    "There’s a pensive silence when we look around and see them all placed with purpose. I cross my arms quietly, and I feel his hand pat my shoulder."
+
+    # show hiro happy
+    hiro "You chose well."
+
+    mc "Thanks. And... thank you for helping me."
+
+    hiro "Anything for a friend."
+
+    "I snort and playfully punch his arm, both hating and loving his response."
+
+    "My god, he's so painfully cheesy."
     return
 
 label hiro_D5_bad:
