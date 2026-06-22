@@ -73,9 +73,9 @@ label hiro_D5_good:
     menu:
         hiro "Um... was that what you wanted to talk about? Or..."
         '"I realized we have a lot of things in common."':
-            call hiro_D5_good_B1
+            call hiro_D5_good_romance
         '"We\'re messed up."':
-            call hiro_D5_good_B2
+            call hiro_D5_good_platonic
 
     return
 
@@ -160,7 +160,7 @@ label hiro_D5_good_A2:
             hiro "Here you go."
     return
 
-label hiro_D5_good_B1:
+label hiro_D5_good_romance:
     # show hiro flustered
     "A blush forms on his cheeks. I don't think I'll ever get tired of seeing that."
 
@@ -176,9 +176,115 @@ label hiro_D5_good_B1:
     mc "I'm... selfish. I want..."
 
     hiro "Yeah?"
+
+    menu:
+        hiro "Yeah?"
+        '"I want you."':
+            $ hiro_D5_good_romance_A = "want you"
+        '"I want us."':
+            $ hiro_D5_good_romance_A = "want us"
+
+    # show hiro flustered
+    hiro "W-what?"
+
+    "I give him a nervous smile. I can hear my own heart race faster."
+
+    if hiro_D5_good_romance_A == "want you":
+        mc "I... want to be selfish. I want you to stay and we can figure out how we can be better people, because I know we could be so much better."
+        mc "I know we’ve had our ups and downs the past few days, but nothing would make me happier than discovering what life could be like with you around."
+        mc "You... make me want to be better."
+        
+        "Is this what it feels like to be embarrassed around him? His awkward little smile is a full blown grin now as he processes my words."
+        
+        hiro "[name]..."
+
+        "He swallows, his Adam's apple bobbing up and down."
+
+        hiro "Are... you sure? It's... I hope that's not coming from me pressuring you or anything..."
+
+        "I shake my head vehemently."
+    elif hiro_D5_good_romance_A == "want us":
+        mc "I know we have our differences. Not to mention that you’re probably not even in the same world or timeline as me."
+        mc "But... I think we’re good motivators for one another. To be better people. To try and move on from our mistakes in the past."
+        mc "I... don’t feel scared thinking about what would happen next when you’re with me. I... feel like I’m safe when I’m with you."
+        
+        "Is this what it feels like to be embarrassed around him?"
+        "He looks at me with gentle eyes and swallows, his Adam's apple bobbing up and down."
+
+        hiro "Don’t… don’t just say things like that. Not after what I’ve done."
+        hiro "What if I hurt you again?"
+
+        "I shake my head vehemently."
+
+        mc "Hiro. I want us to stay together. Won’t you do that for me?"
+
+        "He shifts in his seat nervously, playing with his thumbs."
+
+        hiro "I... don’t want it to come from a place of pressure or anything."
+
+        mc "I want us, Hiro."
+    
+    mc "Please?"
+
+    "To my surprise, he quickly stands up and turns around, covering his face with his hands."
+    "He whines and groans in what I assume is excitement he could no longer contain."
+
+    hiro "Goddammit, [name]..."
+
+    mc "D-did I say something wrong?"
+
+    "He turns to me abruptly with a helpless look with longing in his eyes."
+
+    hiro "No, no. God, I could never say no to you. I don't ever want to dny you anything you want."
+    
+    "He puts his hand over mine, and I swear I could feel the heat of his touch increase tenfold when our skin makes contact."
+
+    hiro "I... am so glad you feel the same way."
+    hiro "I can’t promise that I won’t ever make mistakes, but I can promise that I’ll do everything that will help us be better people."
+    hiro "For ourselves. Together."
+
+    "He nervously brings my hand up to his lips, and kisses the back of my hand."
+
+    # show hiro happy
+    hiro "I promise."
+
+    "I grin and cup his cheek gently, seeing the smile spread across his face."
+
+    mc "You’re such a cheeseball."
+
+    "He chuckles lowly and places his palm over my hand."
+
+    # show hiro flustered
+    hiro "You could say whatever you want, but I’m not the one who confessed their emotions first."
+
+    menu:
+        hiro "You could say whatever you want, but I’m not the one who confessed their emotions first."
+        "Wow. Do you want me to take it back?":
+            call hiro_D5_good_romance_B1
+        '"What else was I supposed to do?"':
+            call hiro_d5_good_romance_B2
+
     return
 
-label hiro_D5_good_B2:
+label hiro_D5_good_romance_B1:
+    "He gives me a playful grin."
+
+    # show hiro happy
+    hiro "What, now you can't stand by your words? You're usually so prideful."
+
+    mc "Ah, since when did {i}you{/i} learn to talk back?"
+
+    hiro "Hmm."
+    hiro "There's this brat I've been stuck with for a couple of days now, and her attitude is really starting to rub off on me."
+
+    "I pull my hand away and cross my arms, smirking."
+
+    return
+
+label hiro_d5_good_romance_B2:
+    return
+
+label hiro_D5_good_platonic:
     "He blinks."
 
     # show hiro flustered
