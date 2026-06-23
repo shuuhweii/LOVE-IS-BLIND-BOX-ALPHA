@@ -262,8 +262,163 @@ label hiro_D5_good_romance:
         "Wow. Do you want me to take it back?":
             call hiro_D5_good_romance_B1
         '"What else was I supposed to do?"':
-            call hiro_d5_good_romance_B2
+            call hiro_D5_good_romance_B2
 
+    # TODO: SHOULD still be showing hiro happy here, but check if not
+    # idk like a console log or smth
+    "He gives me a cheesy grin and sighs softly."
+
+    hiro "You know... we have the rest of the day for ourselves. Is there something you wanna do together?"
+
+    mc "...I think I kind of want to rest for today. Maybe we could have breakfast on the balcony for today."
+
+    hiro "I’d really love that. Is there anything in particular you want to eat?"
+
+    menu:
+        hiro "I’d really love that. Is there anything in particular you want to eat?"
+        '"Something light. Can you cook something for me?"':
+            "He doesn’t even hesitate. He pulls me up from my chair and leads me to the pantry, smiling contently."
+
+            hiro "I’ll do my best and try to cook whatever request you have."
+
+            # hide hiro
+
+            "I point out the ingredients he needs to cook the dish I wanted, and he gets to work right away."
+            "I smile as I observe him keenly, the way his hands are actually so careful with managing everything."
+            "It’s a perfect mix of soft and rugged..."
+
+            "I just noticed how veiny his hands are."
+            "What the hell."
+            "I can see them trail delicately down to his wrist where his gold watch shimmers..."
+
+            # show hiro happy
+            hiro "Are you enjoying the show?"
+
+            "He’s looking at me with a sly smile. I looked away, embarrassed, not knowing I was staring."
+
+            mc "Sorry."
+
+            hiro "Don’t be. I’m glad you are."
+
+            "How the hell is he suddenly saying these things so boldly? Or maybe he doesn’t know the implications?"
+            "Why am I rationalizing this?!"
+
+            # hide hiro
+
+            "I purse my lips and look away, waiting for my face to mellow down from being so flushed as he cooks breakfast."
+        '"Something heavy. I think we can order food for today."':
+            "He tilts his head, looking a bit worried when I say that."
+
+            show hiro neutral
+            hiro "Order? I thought you didn’t have money?"
+
+            "I roll my eyes."
+
+            mc "Do you or do you not want breakfast?"
+
+            # show hiro happy
+
+            "He chuckles and raises his hands in surrender."
+
+            hiro "Of course I do. But I’m also trying to think responsibly here."
+
+            mc "It’s fine. I can pay for it... but just for today..." 
+
+            "..." # Are they fucking
+
+            mc "... and you get the food downstairs."
+
+            # hide hiro
+
+            "We settle in the dining area and I pull up my phone, browsing through different cuisines until we finally settle on one we both think would be delicious for today."
+            "I press the order button and we wait."
+            "Of course, I made him go fetch the food right outside the door."
+
+    "As we carry the plates and our food, I realize that I’ve been blinded by the cleanliness of my kitchen to the holy mess that is in the other parts of my house."
+    "I frown when I see the mess and clutter gathered on my balcony, but I feel a warm pair of hands rest on my shoulders to stop me from getting upset."
+
+    # show hiro neutral
+
+    hiro "Hey. We’ll do something about this, okay?"
+    hiro "Would you like that, or would you like to just eat breakfast?"
+
+    mc "... balcony."
+
+    # show hiro happy
+    "He smiles warmly."
+
+    hiro "Okay, okay."
+
+    # hide hiro
+
+    "To my disdain, he starts another plan to efficiently get rid of the mess that stays in my balcony, but I complain and tell him I am not about to do the pile system he suggested yesterday."
+    "We take turns explaining our sides, but eventually settle with my decision in the end."
+
+    "I pick up and collect all the trinkets I could find and dump them all on my living room floor."
+    "He goes to the balcony with a broom and dustpan and sweeps all the trash up, putting them in the garbage bag he took from the pantry."
+    "It doesn’t take us long until the place is actually decent. He takes it a step further and wipes down the chairs and table we plan on using."
+
+    mc "You could have just wiped the table down. I don’t mind sitting on a mildly dirty chair."
+
+    # show hiro happy
+    hiro "I do. And I think it would be good for you too if we sat on something actually clean."
+
+    mc "What’s that supposed to mean?"
+
+    "He chuckles at me and just smiles."
+
+    hiro "Come on. Let’s have breakfast."
+
+    # hide hiro
+
+    "We grab our food from the dining room table and set it properly on the balcony table."
+    "The view outside feels so, so much more refreshing compared to the constant clutter I’m used to inside my own home."
+
+    "We sit down and eat in silence, watching the people downstairs go about their morning as they normally would."
+    "There’s a sense of normalcy and peace as we observe them from a distance, and I must have been frowning a little too hard when Hiroshi speaks up."
+
+    # show hiro neutral
+    hiro "[name]. What's on your mind?"
+
+    menu:
+        hiro "[name]. What's on your mind?"
+        "Those people downstairs...":
+            pass
+        '"I feel melancholic."':
+            pass
+        '"A lot of things."':
+            pass
+
+    mc "I kind of feel like I’m lagging behind."
+    mc "Up until this point, it felt like my life didn’t have any chance for a hopeful change."
+    mc "I got so used to the clutter and mess that I didn’t think about what it would be like if I had someone I cared about who saw my turmoil."
+
+    "I see him from the corner of my eye put down his utensil and lean closer."
+    # hide hiro
+    "I continue to look over the people below, my lips curving to a smile."
+
+    mc "I feel like a cornball for contemplating out loud. But..."
+    mc "I feel comfortable enough with you."
+
+    "I turn my head to gaze at him, my eyes soft."
+    # show hiro happy
+
+    mc "I hope that’s okay with you."
+
+    hiro "It is. I care about you too, [name]."
+
+    # hide hiro
+    "The silence that follows is comfortable and warm. I steal a glance and his expression is..."
+    # show hiro neutral
+    "... not entirely calm, but not super anxious either."
+
+    hiro "After all this... I don’t know."
+    hiro "I’m just... feeling nervous about starting over."
+
+    # show hiro happy
+
+    hiro "... but I’m glad it’s with you."
+    
     return
 
 label hiro_D5_good_romance_B1:
@@ -279,9 +434,95 @@ label hiro_D5_good_romance_B1:
 
     "I pull my hand away and cross my arms, smirking."
 
+    mc "Really now?"
+
+    "Hiroshi chuckles and takes my hand again, caressing the back of it with his thumb slowly."
+
+    hiro "Yes. She's very lucky that I learned how to be patient."
+
+    mc "Did she teach you that, too?"
+
+    hiro "Maybe. But you know what else I learned?"
+
+    mc "What is it?"
+
+    hiro "I learned that I really like her. Through everything."
+
+    "I rolled my eyes and laughed, the mood in the kitchen shifted to something warm and welcoming."
+
     return
 
-label hiro_d5_good_romance_B2:
+label hiro_D5_good_romance_B2:
+    "Hiroshi shrugs and gives me a genuine smile."
+
+    # show hiro happy
+    hiro "Maybe... not tell me?"
+
+    mc "So you would rather not know I wanted you?"
+
+    hiro "I didn’t say anything like that."
+    hiro "I said maybe."
+
+    mc "You’re a dick."
+
+    "He laughs at me and leans his face into my palm."
+
+    hiro "So quick to be vulgar. You think we can work on that when we’re together?"
+
+    menu:
+        hiro "So quick to be vulgar. You think we can work on that when we’re together?"
+        '"No, you dick."':
+            $ hiro_D5_good_romance_B2a = "not lewd"
+        '"Fuck fuck fuckity fuck fuck."':
+            $ hiro_D5_good_romance_B2a = "not lewd"
+        '"Work on what? My mouth?"':
+            $ hiro_D5_good_romance_B2a = "lewd"
+
+    if hiro_D5_good_romance_B2a == "not lewd":
+        "Hiroshi shakes his head and smiles cheekily."
+
+        hiro "That’s my bad. I forgot you do what you want when you want to."
+    elif hiro_D5_good_romance_B2a == "lewd":
+        "He tilts his head even more to my palm and grins."
+
+        hiro "Say that again?"
+
+        menu:
+            hiro "Say that again?"
+            '"You heard me."':
+                "He chuckles and smiles dreamily."
+                # "I can feel his warm breath on my hand right where he's nuzzling into it."
+
+                "He sits up straight and rests his chin on the back of his hand."
+
+                hiro "I know."
+                hiro "But I’m not allowed to say anything beyond this due to my contract, so I’ll let you imagine the response you want me to do."
+                hiro "Keep it a secret from the devs working on this, yeah?"
+
+                # hiro "But I’m not allowed to {b}say{/b} anything beyond this due to my contract, {i}but{/i}..."
+
+                # "His fingers tighten around mine as he draws nearer."
+                # "He keeps my hand pressed to his cheek, hooking one leg against the side of my chair."
+                # "Then he dips toward me, and--"
+
+                # hide hiro
+                # fade to black here, add a wait time
+
+                # "Hiroshi pulls away from me, straightening his clothes."
+                # "He takes his thumb, and wipes a thin trail of wetness from the corner of his mouth."
+
+                # show hiro happy
+
+                # hiro "... I’ll let you fill in the blanks yourself."
+                
+                hiro "Keep it a secret from the devs working on this, yeah?"
+            "Repeat what you said.":
+                "He shakes his head, smiling and checking his surroundings before leaning it to whisper."
+
+                hiro "I apologize, but due to my contract I can’t entertain that kind of retaliation."
+                hiro "I’ll let you imagine the response you want me to do, just..."
+                hiro "Make sure to keep this a secret from the devs, yeah?"
+
     return
 
 label hiro_D5_good_platonic:
